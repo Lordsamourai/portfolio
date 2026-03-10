@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets – Virgile</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages/projects.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+     <div id="header"></div>
+
+    <!-- CONTENU -->
+    <section class="page-content">
+        <div class="title-with-photo">
+            <img src="images/bg.png" alt="Photo de profil" class="profile-photo">
+
+            <div class="title-text">
+                <h1 class="main-title">Game Developer en formation</h1>
+                <p class="intro-text">
+                    Amateur de programmation et de moteur de jeu, ce que j’apprécie en tant
+                    qu’informaticien c'est le fait de pouvoir créer des éléments qui seront utiles aux autres en
+                    leur facilitant la vie ou en leur provoquant des émotions. Je suis quelqu'un d'assez créatif,
+                    j’utilise mon temps libre pour concevoir des éléments de modélisation et de gameplay utiles
+                    à mes projets personnels.
+                </p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Projets réalisés</h2>
+
+        <div class="projects-grid" id="projects">
+
+            <!-- PROJET 1 -->
+            <a href="projects/project1_1.html" class="project-card">
+                <img src="images/Project_1_1/fleur.png" alt="Projet 1">
+                <h2>Logiciel Ascii Art</h2>
+                <p>Logiciel de transformation d’image en Ascii Art</p>
+                <div class="tags">
+                    <span class="tag">Visual Studio</span>
+                    <span class="tag">C++</span>
+                </div>
+            </a>
+
+            <a href="projects/project1.html" class="project-card">
+                <img src="images/Project_1/TVS_Main.png" alt="Projet 1">
+                <h2>The Verdant Sentinel</h2>
+                <p>Jeu de survie-aventure</p>
+                <div class="tags">
+                    <span class="tag">Unity</span>
+                    <span class="tag">C#</span>
+                    <span class="tag">Modélisation 3D</span>
+                    <span class="tag">Game Design</span>
+                    <span class="tag">Level Design</span>
+                </div>
+            </a>
+
+            <!-- PROJET 2 -->
+            <a href="projects/project2.html" class="project-card">
+                <img src="images/Project_2/MLK_Base.jpg" alt="Projet 2">
+                <h2>L'écho des voix</h2>
+                <p>Jeu vidéo éducatif sur l'histoire des Afros-Américains</p>
+                <div class="tags">
+                    <span class="tag">Unreal Engine</span>
+                    <span class="tag">Blueprint</span>
+                    <span class="tag">Modélisation 3D</span>
+                    <span class="tag">Game Design</span>
+                    <span class="tag">Level Design</span>
+                </div>
+            </a>
+
+            <!-- PROJET 3 -->
+            <a href="projects/project3.html" class="project-card">
+                <img src="images/Project_4/L1_Main.png" alt="Projet 3">
+                <h2>Tiny Veggie Garden</h2>
+                <p>Jeu de simulation de jardinage</p>
+                <div class="tags">
+                    <span class="tag">Unity</span>
+                    <span class="tag">C#</span>
+                </div>
+            </a>
+
+            <!-- PROJET 4 -->
+            <a href="projects/project4.html" class="project-card">
+                <img src="images/Project_3/TLW_Main.png" alt="Projet 4">
+                <h2>The Last Week</h2>
+                <p>Jeu d'infiltration</p>
+                <div class="tags">
+                    <span class="tag">Unity</span>
+                    <span class="tag">C#</span>
+                </div>
+            </a>
+
+             <!-- PROJET 5 -->
+            <a href="projects/project5.html" class="project-card">
+                <img src="images/Project_5/SSR_Map_1.png" alt="Projet 5">
+                <h2>Spooky Scary Robbery</h2>
+                <p>Jeu d'arcade</p>
+                <div class="tags">
+                    <span class="tag">Unity</span>
+                    <span class="tag">C#</span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <script>
+        async function includeHTML(id, file) {
+            const element = document.getElementById(id);
+            const response = await fetch(file);
+            const html = await response.text();
+            element.innerHTML = html;
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            includeHTML("header", "includes/header.html");
+            includeHTML("footer", "includes/footer.html");
+        });
+    </script>
+
+</body>
+</html>

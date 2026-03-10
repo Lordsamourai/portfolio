@@ -1,0 +1,43 @@
+/* BOUTONS */
+.cta {
+    padding: 12px 24px;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.cta.secondary {
+    background: transparent;
+    border: 3px solid var(--bg3);
+    color: var(--text-light);
+}
+
+.cta:hover {
+    opacity: 0.85;
+}
+
+/* SECTION HERO */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    flex: 1; /* pousse le footer en bas */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: var(--text-light);
+}
+
+.cta-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

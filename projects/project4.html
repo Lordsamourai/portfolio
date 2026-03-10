@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet 1 – Virgile</title>
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/pages/project.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <!-- CONTENU GLOBAL -->
+    <div class="project-container">
+
+        <div class="project-header">
+            <h1 class="project-title">The Last Week</h1>
+
+            <div class="main-image-box">
+                <img src="../images/Project_3/TLW_Main.png" alt="Projet 1" class="main-project-image">
+                <div class="image-caption">Aperçu de l’accueil du jeu</div>
+            </div>
+        </div>
+
+        <!-- SECTION 1 : CONTEXTE -->
+        <section class="project-section">
+            <h2>Contexte</h2>
+            <div class="separator"></div>
+
+            <p>
+                Durant ma troisième année, j’ai travaillé sur The Last Week, un projet imposé dans lequel on incarne un étudiant en classe devant copier sur ses camarades sans se faire détecter. Pour le réaliser, je me suis appuyé sur un cahier des charges précisant les éléments obligatoires à intégrer.<br><br>
+
+                Étant seul sur ce projet, j’ai utilisé des assets en ligne pour l’environnement, les ambiances et le son. En revanche, l’intégralité de la programmation a été réalisée par mes soins.<br><br>
+
+                The Last Week est le deuxième des trois jeux que j’ai développés en solo durant ma troisième année. 
+            </p>
+        </section>
+
+        <!-- SECTION 2 : ÉTAPES -->
+        <section class="project-section">
+            <h2>Étapes</h2>
+            <div class="separator"></div>
+
+            <ul>
+                <li>Analyse du cahier des charges</li>
+                <li>Développement des fonctionnalités demandées</li>
+                <li>Tests et rendu sur itch.io</li>
+            </ul>
+
+            <div class="image-row">
+                <div class="image-box">
+                    <img src="../images/Project_3/TLW_Class.png" alt="Image 1">
+                    <div class="image-caption">Aperçu d’une salle de classe</div>
+                </div>
+
+                <div class="image-box">
+                    <img src="../images/Project_3/TLW_Exam.png" alt="Image 2">
+                    <div class="image-caption">Aperçu du panneau pour écrire les réponses</div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SECTION 3 : OUTILS -->
+        <section class="project-section">
+            <h2>Outils</h2>
+            <div class="separator"></div>
+
+            <ul>
+                <li>Unity Engine</li>
+                <li>Visual Studio</li>
+                <li>Blender</li>
+                <li>GitHub</li>
+            </ul>
+        </section>
+
+        <!-- SECTION 4 : COMPÉTENCES -->
+        <section class="project-section">
+            <h2>Compétences</h2>
+            <div class="separator"></div>
+
+            <ul>
+                <li>
+                    <p>
+                        <strong>Techniques : </strong><br>
+                    </p>
+                    <ul>
+                        <li>Programmation en C#</li>
+                        <li>Conception et intégration de mécaniques de gameplay</li>
+                        <li>Création et intégration de modèles 3D</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <p>
+                        <strong>Transversales : </strong><br>
+                    </p>
+                    <ul>
+                        <li>Gestion de projet en équipe</li>
+                        <li>Capacité à atteindre des objectifs et à respecter les délais</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <p>
+                        <strong>Humaines : </strong><br>
+                    </p>
+                    <ul>
+                        <li>Esprit critique et résolution de problèmes</li>
+                        <li>Communication et travail en équipe</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="image-row">
+                <div class="image-box">
+                    <img src="../images/Project_3/TLW_WC.png" alt="Image 1">
+                    <div class="image-caption">Aperçu du magasin du jeu</div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SECTION 5 : CONCLUSION -->
+        <section class="project-section">
+            <h2>Conclusion</h2>
+            <div class="separator"></div>
+
+            <p>
+                Pour conclure, The Last Week a été une expérience de développement particulièrement utile sous Unity. 
+                Il s’agissait d’un projet plus conséquent, réalisé sur plusieurs semaines, où j’ai dû travailler seul. 
+                Cette autonomie m’a permis de toucher à l’ensemble des aspects du développement d’un jeu vidéo et de découvrir de nouveaux éléments qui peuvent intervenir dans une production.<br><br>
+
+                Ce projet m’a plu notamment grâce à l’exploration de concepts que j’avais peu abordés auparavant, comme l’animation ou la gestion des déplacements d’un PNJ. 
+                Je suis satisfait d’avoir pu apprendre ces nouveaux éléments essentiels au jeu vidéo et d’avoir respecté l’ensemble des exigences du cahier des charges.
+            </p>
+        </section>
+
+        <!-- BOUTON RETOUR -->
+        <div class="project-buttons">
+            <a href="../index.html#projects" class="cta secondary">← Retour aux projets</a>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+    
+    <script>
+        async function includeHTML(id, file) {
+            const element = document.getElementById(id);
+            const response = await fetch(file);
+            const html = await response.text();
+            element.innerHTML = html;
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            includeHTML("header", "../includes/header2.html");
+            includeHTML("footer", "../includes/footer2.html");
+        });
+    </script>
+
+</body>
+</html>

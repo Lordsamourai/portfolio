@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills – Virgile</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages/skills.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <!-- PAGE CONTENT (tu voulais garder cette classe) -->
+    <section class="page-content">
+
+        <div class="skills-container">
+
+            <!-- COLONNE GAUCHE : CV -->
+            <div class="skills-left">
+                <div class="cv-wrapper">
+                    <embed src="documents/cv.pdf#toolbar=0&zoom=80" type="application/pdf" class="cv-viewer">
+                </div>
+            </div>
+
+            <!-- COLONNE DROITE : BLOCS -->
+            <div class="skills-right">
+
+                <!-- 1. Soft Skills -->
+                <div class="skills-block">
+                    <p>Soft Skills</p>
+
+                    <div class="skill-item">
+                        <span>Communication</span>
+                        <div class="skill-bar"><div style="width: 85%;"></div></div>
+                        <span class="percent">85%</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <span>Travail d'équipe</span>
+                        <div class="skill-bar"><div style="width: 90%;"></div></div>
+                        <span class="percent">90%</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <span>Créativité</span>
+                        <div class="skill-bar"><div style="width: 80%;"></div></div>
+                        <span class="percent">80%</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <span>Organisation</span>
+                        <div class="skill-bar"><div style="width: 75%;"></div></div>
+                        <span class="percent">75%</span>
+                    </div>
+                </div>
+
+                <!-- 2. Parcours -->
+                <div class="skills-block">
+                    <p>Parcours</p>
+                    <ul>
+                        <li>BUT Informatique - 2023-2026</li>
+                        <li>IUT Clermont Auvergne</li>
+                        <li>Spécialité en développement d'applications</li>
+                    </ul>
+                    <ul>
+                        <li>BAC STI2D - 2022 </li>
+                        <li>Lycée Lafayette - Clermont-Ferrand</li>
+                        <li>Option SIN - Systèmes d'Information et Numérique</li>
+                    </ul>
+                </div>
+
+                <!-- 3. Langues & Certifications -->
+                <div class="skills-block">
+                    <p>Langues & Certifications</p>
+                    <p>Français — Natif</p>
+                    <p>Anglais — B2</p>
+                    <p>Certification PIX — Niveau Avancé</p>
+                    <p>Certificat Mooc</p>
+                </div>
+
+                <!-- 4. Boutons -->
+                <div class="skills-block2 buttons-block">
+                    <a href="documents/cv.pdf" class="cta secondary">Ouvrir CV</a>
+                    <a href="#" onclick="downloadCV()" class="cta secondary">
+                        Télécharger CV
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+    
+    <script>
+        function downloadCV() {
+            fetch('documents/cv.pdf')
+                .then(response => response.blob())
+                .then(blob => {
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.style.display = 'none';
+                    a.href = url;
+                    a.download = 'CV_Virgile_Marion.pdf';
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                });
+        }
+        async function includeHTML(id, file) {
+            const element = document.getElementById(id);
+            const response = await fetch(file);
+            const html = await response.text();
+            element.innerHTML = html;
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            includeHTML("header", "includes/header.html");
+            includeHTML("footer", "includes/footer.html");
+        });
+    </script>
+
+</body>
+</html>

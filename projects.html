@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio – Virgile</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages/home.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <!-- SECTION D’ACCUEIL -->
+    <section class="page-content">
+        <h1>Bienvenue dans mon univers créatif</h1>
+        <p>Je suis Virgile, designer narratif et développeur passionné par les mondes immersifs.</p>
+
+        <div class="cta-container">
+            <a href="projects.html" class="cta">Voir mes projets</a>
+            <a href="about.html" class="cta secondary">En savoir plus</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+    
+    <script>
+        async function includeHTML(id, file) {
+            const element = document.getElementById(id);
+            const response = await fetch(file);
+            const html = await response.text();
+            element.innerHTML = html;
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            includeHTML("header", "includes/header.html");
+            includeHTML("footer", "includes/footer.html");
+        });
+    </script>
+
+</body>
+</html>

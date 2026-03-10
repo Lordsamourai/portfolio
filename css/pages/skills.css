@@ -1,0 +1,132 @@
+/* Le container principal dans .page-content */
+.skills-container {
+    display: flex;
+    width: 100%;
+}
+
+/* COLONNE GAUCHE */
+.skills-left {
+    flex: 1;
+}
+
+.cv-wrapper {
+    margin-left: 15%;
+    margin-right: 10%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.cv-viewer {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* COLONNE DROITE */
+.skills-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.skills-block {
+    background: var(--bg2);
+    padding: 2%;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-right: 15%;
+}
+
+.skills-block2 {
+    background: none;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-right: 15%;
+}
+
+/* Le premier p = le titre */
+.skills-block p:first-child {
+    font-size: 0.91rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--bg);
+}
+
+/* Tous les autres p */
+.skills-block p:not(:first-child) {
+    font-size: 0.78rem;
+    margin-bottom: 5px;
+    color: 444;
+}
+
+
+.skills-block ul {
+    list-style: none;
+    padding-left: 0;  
+}
+
+.skills-block ul li {
+    margin-bottom: 5px;
+    font-size: 0.8rem;   /* taille du texte */
+    color: #444;          /* couleur du texte */
+    font-weight: 500;     /* optionnel */
+}
+
+.skills-block ul li:nth-child(1) {
+    color: var(--bg); /* bleu */
+    font-size: 0.83rem;
+}
+
+.skills-block ul li:nth-child(2) {
+    color: var(--text);  
+    font-size: 0.78rem;
+}
+
+.skills-block ul li:nth-child(3) {
+    color: var(--text); 
+    font-size: 0.7rem;
+}
+
+/* Soft skills bars */
+.skill-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 50px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill-item span {
+    font-size: 0.78rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 6px;
+    background: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-bar div {
+    height: 100%;
+    background: var(--bg);
+}
+
+.percent {
+    text-align: right;
+}
+
+/* Boutons */
+.buttons-block {
+    display: flex;
+    gap: 30px;
+    color: var(--bg);
+}
+
+.cta.small {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+}

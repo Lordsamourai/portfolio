@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet 1 – Virgile</title>
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/pages/project.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <!-- CONTENU GLOBAL -->
+    <div class="project-container">
+
+        <div class="project-header">
+            <h1 class="project-title">Spooky Scary Robbery</h1>
+
+            <div class="main-image-box">
+                <img src="../images/Project_5/SSR_Map_1.png" alt="Projet 1" class="main-project-image">
+                <div class="image-caption">Aperçu du jeu</div>
+            </div>
+        </div>
+
+        <!-- SECTION 1 : CONTEXTE -->
+        <section class="project-section">
+            <h2>Contexte</h2>
+            <div class="separator"></div>
+
+            <p>
+                Cette game jam a été pour moi une très bonne découverte, car elle a permis de changer mon rythme de travail et de créer un petit jeu en seulement deux jours, au lieu de plusieurs semaines.<br><br>
+                Elle m’a également permis de voir ce qu’une petite équipe de développeurs peut accomplir en si peu de temps.<br><br>
+                C’était ma première game jam, et l’idée d’en faire d’autres m’intéresse particulièrement.
+            </p>
+        </section>
+
+        <!-- SECTION 2 : ÉTAPES -->
+        <section class="project-section">
+            <h2>Étapes</h2>
+            <div class="separator"></div>
+
+            <ul>
+                <li>Réflexion sur le sujet imposé</li>
+                <li>Développement du jeu</li>
+                <li>Tests et rendu</li>
+            </ul>
+
+            <div class="image-row">
+                <div class="image-box">
+                    <img src="../images/Project_5/SSR_Map_2.png" alt="Image 2">
+                    <div class="image-caption">Aperçu de la vue principale</div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SECTION 3 : OUTILS -->
+        <section class="project-section">
+            <h2>Outils</h2>
+            <div class="separator"></div>
+
+            <ul>
+                <li>Unity Engine</li>
+                <li>Visual Studio</li>
+                <li>GitHub</li>
+            </ul>
+        </section>
+
+        <!-- SECTION 4 : COMPÉTENCES -->
+        <section class="project-section">
+            <h2>Compétences</h2>
+            <div class="separator"></div>
+
+            <ul>
+                <li>
+                    <p>
+                        <strong>Techniques : </strong><br>
+                    </p>
+                    <ul>
+                        <li>Programmation en C#</li>
+                        <li>Conception et intégration de mécaniques de gameplay</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <p>
+                        <strong>Transversales : </strong><br>
+                    </p>
+                    <ul>
+                        <li>Gestion de projet en équipe</li>
+                        <li>Capacité à atteindre des objectifs et à respecter les délais</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <p>
+                        <strong>Humaines : </strong><br>
+                    </p>
+                    <ul>
+                        <li>Communication et travail en équipe</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="image-row">
+                <div class="image-box">
+                    <img src="../images/Project_5/SSR_Enemy.png" alt="Image 1">
+                    <div class="image-caption">Aperçu de l’ennemi slime</div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SECTION 5 : CONCLUSION -->
+        <section class="project-section">
+            <h2>Conclusion</h2>
+            <div class="separator"></div>
+
+            <p>
+                Cette game jam a été pour moi une très bonne découverte, car elle a permis de changer mon rythme de travail et de créer un petit jeu en seulement deux jours, au lieu de plusieurs semaines.<br><br>
+                Elle m’a également permis de voir ce qu’une petite équipe de développeurs peut accomplir en si peu de temps.<br><br>
+                C’était ma première game jam, et l’idée d’en faire d’autres m’intéresse particulièrement.
+            </p>
+        </section>
+
+        <!-- BOUTON RETOUR -->
+        <div class="project-buttons">
+            <a href="../index.html#projects" class="cta secondary">← Retour aux projets</a>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+    
+    <script>
+        async function includeHTML(id, file) {
+            const element = document.getElementById(id);
+            const response = await fetch(file);
+            const html = await response.text();
+            element.innerHTML = html;
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            includeHTML("header", "../includes/header2.html");
+            includeHTML("footer", "../includes/footer2.html");
+        });
+    </script>
+
+</body>
+</html>

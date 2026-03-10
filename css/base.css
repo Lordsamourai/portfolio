@@ -1,0 +1,27 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Couleurs globales */
+:root {
+    --primary: #124559;
+    --text: white;
+    --text-light: white;
+    --bg: #01161E;
+    --bg2: #598392;
+    --bg3: #124559;
+    --white: white;
+    --text-select: #01161E;
+}
