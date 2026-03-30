@@ -9,8 +9,14 @@
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/components.css">
     <link rel="stylesheet" href="../css/pages/project.css">
+    <link rel="stylesheet" href="../css/lightbox.css">
 </head>
 <body>
+
+    <div class="lightbox-overlay" id="lightbox">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="">
+    </div>
 
     <!-- HEADER -->
     <div id="header"></div>
@@ -19,11 +25,11 @@
     <div class="project-container">
 
         <div class="project-header">
-            <h1 class="project-title">Tiny Veggie Garden</h1>
+            <h1 class="project-title">TaskMongo</h1>
 
             <div class="main-image-box">
-                <img src="../images/Project_4/L1_Main.png" alt="Projet 1" class="main-project-image">
-                <div class="image-caption">Aperçu du jeu</div>
+                <img src="../images/Project_3/MD_signin.png" alt="Projet 1" class="main-project-image">
+                <div class="image-caption">Aperçu de la création d’un compte</div>
             </div>
         </div>
 
@@ -33,11 +39,8 @@
             <div class="separator"></div>
 
             <p>
-                Durant ma troisième année, j’ai travaillé sur Tiny Veggie Garden, un projet imposé dans lequel on incarne un petit drone chargé de planter et récolter des légumes. Pour le réaliser, je me suis appuyé sur un cahier des charges détaillant les éléments obligatoires à intégrer.<br><br>
-
-                Étant seul sur ce projet, j’ai utilisé des assets en ligne pour l’environnement, les ambiances et le son. En revanche, l’intégralité de la programmation a été réalisée par mes soins.<br><br>
-
-                Tiny Veggie Garden est le premier des trois jeux que j’ai développés en solo durant ma troisième année, et également le plus simple à concevoir.
+                TaskMongo est un projet fullstack réalisé en binôme. L’objectif était de concevoir une application complète de gestion de tâches, incluant un backend Node.js/Express connecté à une base MongoDB, ainsi qu’un frontend Angular permettant de visualiser, filtrer et modifier les tâches.<br><br>
+                J’ai été responsable de toute la partie back‑end ainsi que de certaines parties du front‑end, tandis que mon binôme se chargeait principalement du front‑end. Nous avons également co‑réalisé le diaporama final pour présenter notre projet.
             </p>
         </section>
 
@@ -47,15 +50,20 @@
             <div class="separator"></div>
 
             <ul>
-                <li>Analyse du cahier des charges</li>
-                <li>Développement des fonctionnalités demandées</li>
-                <li>Tests et rendu sur itch.io</li>
+                <li>Modélisation de la base de données</li>
+                <li>Développement du backend</li>
+                <li>Développement du frontend</li>
             </ul>
 
             <div class="image-row">
                 <div class="image-box">
-                    <img src="../images/Project_4/L1_Grow.png" alt="Image 1">
-                    <div class="image-caption">Aperçu de la vue principale</div>
+                    <img src="../images/Project_3/MD_filter.png" alt="Image 2">
+                    <div class="image-caption">Aperçu du filtrage</div>
+                </div>
+
+                 <div class="image-box">
+                    <img src="../images/Project_3/MD_tasks.png" alt="Image 2">
+                    <div class="image-caption">Aperçu du tableau des tâches</div>
                 </div>
             </div>
 
@@ -67,9 +75,8 @@
             <div class="separator"></div>
 
             <ul>
-                <li>Unity Engine</li>
-                <li>Visual Studio</li>
-                <li>Blender</li>
+                <li>Visual Studio Code</li>
+                <li>MongoDb Compass</li>
                 <li>GitHub</li>
             </ul>
         </section>
@@ -85,9 +92,9 @@
                         <strong>Techniques : </strong><br>
                     </p>
                     <ul>
-                        <li>Programmation en C#</li>
-                        <li>Conception et intégration de mécaniques de gameplay</li>
-                        <li>Création et intégration de modèles 3D</li>
+                        <li>Développement backend Node.js / Express</li>
+                        <li>Modélisation MongoDB</li>
+                        <li>Implémentation d’une API REST</li>
                     </ul>
                 </li>
             </ul>
@@ -98,28 +105,16 @@
                         <strong>Transversales : </strong><br>
                     </p>
                     <ul>
-                        <li>Gestion de projet en équipe</li>
-                        <li>Capacité à atteindre des objectifs et à respecter les délais</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    <p>
-                        <strong>Humaines : </strong><br>
-                    </p>
-                    <ul>
-                        <li>Esprit critique et résolution de problèmes</li>
-                        <li>Communication et travail en équipe</li>
+                        <li>Travail en binôme</li>
+                        <li>Rédaction d’un livrable</li>
                     </ul>
                 </li>
             </ul>
 
             <div class="image-row">
                 <div class="image-box">
-                    <img src="../images/Project_4/L1_Reward.png" alt="Image 1">
-                    <div class="image-caption">Aperçu de la vente des légumes</div>
+                    <img src="../images/Project_3/MD_task.png" alt="Image 2">
+                    <div class="image-caption">Aperçu de l’édition d’une tâche</div>
                 </div>
             </div>
 
@@ -131,9 +126,9 @@
             <div class="separator"></div>
 
             <p>
-                Pour conclure, Tiny Veggie Garden a été une excellente expérience de développement de jeu vidéo sous Unity. Il s’agissait également du premier projet de jeu que je réalisais entièrement seul. Cette autonomie m’a permis de toucher à l’ensemble des aspects du développement, et de prendre conscience du nombre important de tâches nécessaires à la conception d’un jeu complet. <br><br>
+                Ce projet m’a permis de travailler sur une architecture full‑stack complète et de renforcer mes compétences en backend Node.js, en modélisation MongoDB et en gestion de données complexes. J’ai également découvert Angular grâce au travail de mon binôme, ce qui m’a permis d’explorer une nouvelle technologie. <br><br>
 
-                Ce projet m’a particulièrement plu grâce à son originalité. Pouvoir travailler sans équipe, pour une fois, m’a offert l’occasion de gérer moi-même chaque étape du processus et d’explorer des domaines que je n’aurais peut-être pas abordés autrement. <br><br>
+                Enfin, la collaboration en binôme m’a appris à mieux communiquer et à coordonner mes efforts avec ceux d’un partenaire, une compétence importante dans le développement web.
             </p>
         </section>
 
@@ -144,20 +139,38 @@
 
     </div>
 
-    <!-- FOOTER -->
     <div id="footer"></div>
     
     <script>
-        async function includeHTML(id, file) {
-            const element = document.getElementById(id);
-            const response = await fetch(file);
-            const html = await response.text();
-            element.innerHTML = html;
-        }
-
         document.addEventListener("DOMContentLoaded", () => {
+            async function includeHTML(id, file) {
+                const element = document.getElementById(id);
+                const response = await fetch(file);
+                const html = await response.text();
+                element.innerHTML = html;
+            }
+
             includeHTML("header", "../includes/header2.html");
             includeHTML("footer", "../includes/footer2.html");
+
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+
+            document.querySelectorAll('.image-box img, .main-image-box img').forEach(img => {
+                img.addEventListener('click', () => {
+                    lightboxImg.src = img.src;
+                    lightboxImg.alt = img.alt;
+                    lightbox.classList.add('active');
+                });
+            });
+
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('active');
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') lightbox.classList.remove('active');
+            });
         });
     </script>
 

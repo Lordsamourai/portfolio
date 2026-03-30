@@ -9,8 +9,14 @@
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/components.css">
     <link rel="stylesheet" href="../css/pages/project.css">
+    <link rel="stylesheet" href="../css/lightbox.css">
 </head>
 <body>
+
+    <div class="lightbox-overlay" id="lightbox">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="">
+    </div>
 
     <!-- HEADER -->
     <div id="header"></div>
@@ -19,11 +25,11 @@
     <div class="project-container">
 
         <div class="project-header">
-            <h1 class="project-title">The Verdant Sentinel</h1>
+            <h1 class="project-title">Logiciel Ascii Art</h1>
 
             <div class="main-image-box">
-                <img src="../images/Project_1/TVS_Main.png" alt="Projet 1" class="main-project-image">
-                <div class="image-caption">Aperçu de l'environnement du jeu</div>
+                <img src="../images/Project_1/fleur.png" alt="Projet 1" class="main-project-image">
+                <div class="image-caption">Aperçu de la fleur d'origine</div>
             </div>
         </div>
 
@@ -33,9 +39,12 @@
             <div class="separator"></div>
 
             <p>
-                Dans le cadre universitaire, lors de ma deuxième année, j'ai travaillé sur un projet de jeu vidéo. Le choix du type de jeu était libre, sans thème imposé.<br><br>
-                Mon rôle au sein de l’équipe était celui de Gameplay Programmer et Game Designer, chargé de développer les mécaniques de gameplay, de créer des modèles 3D et de concevoir le level design.<br><br>
-                Dans un premier temps, j'ai collaboré avec mon équipe pour définir la vision globale du jeu. Par la suite, j'ai concrétisé les éléments de gameplay et de modélisation 3D retenus. Enfin, il a fallu réalisé un build du jeu et préparé sa présentation.
+                Dans le cadre universitaire, lors de ce projet, j’avais pour mission au sein d’une équipe de me mettre dans la peau d’un développeur d’applications qui reçoit une commande de la part d’un client. 
+                La commande du client avait pour objectif de réaliser un logiciel qui pourrait lui permettre de convertir des images en Ascii Art. Le client souhaite que plusieurs versions du logiciel soit créé et qui pour chaque nouvelle version soit compris des fonctionnalités supplémentaires.<br><br>
+
+                Au sein de l’équipe, j’ai eu pour mission de réaliser une application qui permet de convertir des images en Ascii Art en fonction des besoins d’un client.<br><br>
+
+                Dans un premier temps, j’ai dû prendre connaissance des demandes du client présent dans un cahier des charges. Ensuite, j’ai dû transformer les demandes et exigences du cahier des charges en code c++. Pour finir, il a fallu faire un compte-rendu du travail réalisé. 
             </p>
         </section>
 
@@ -45,21 +54,20 @@
             <div class="separator"></div>
 
             <ul>
-                <li>Conceptualisation</li>
-                <li>Développement et prototypage</li>
-                <li> Assemblage et tests</li>
-                <li>Corrections et finalisation</li>
+                <li>Analyse du cahier des charges</li>
+                <li>Développement en C++</li>
+                <li>Rédaction du livrable final</li>
             </ul>
 
             <div class="image-row">
                 <div class="image-box">
-                    <img src="../images/Project_1/TVS_Craft.png" alt="Image 1">
-                    <div class="image-caption">Aperçu du panel de craft</div>
+                    <img src="../images/Project_1/fleur_ascii.png" alt="Image 2">
+                    <div class="image-caption">Aperçu de la fleur en Ascii Art</div>
                 </div>
 
-                <div class="image-box">
-                    <img src="../images/Project_1/TVS_Fight.png" alt="Image 2">
-                    <div class="image-caption">Aperçu d’un combat avec un ours</div>
+                 <div class="image-box">
+                    <img src="../images/Project_1/fleur_ascii_2.png" alt="Image 2">
+                    <div class="image-caption">Aperçu de la fleur en Ascii Art 2</div>
                 </div>
             </div>
 
@@ -71,9 +79,7 @@
             <div class="separator"></div>
 
             <ul>
-                <li>Unity Engine</li>
                 <li>Visual Studio</li>
-                <li>Blender</li>
                 <li>GitHub</li>
             </ul>
         </section>
@@ -89,10 +95,9 @@
                         <strong>Techniques : </strong><br>
                     </p>
                     <ul>
-                        <li>Programmation en C#</li>
-                        <li>Conception et intégration de mécaniques de gameplay</li>
-                        <li>Optimisation et tests de fonctionnalités </li>
-                        <li>Création et intégration de modèles 3D</li>
+                        <li>Programmation en C++</li>
+                        <li>Appliquer des principes d’accessibilité et d’ergonomie</li>
+                        <li>Vérifier et valider la qualité de l’application par les tests</li>
                     </ul>
                 </li>
             </ul>
@@ -103,8 +108,8 @@
                         <strong>Transversales : </strong><br>
                     </p>
                     <ul>
-                        <li>Gestion de projet en équipe</li>
-                        <li>Capacité à atteindre des objectifs et à respecter les délais</li>
+                        <li>Faire des essais et évaluer leurs résultats en regard des spécifications</li>
+                        <li>Capacité d'analyse et de résolution de problèmes</li>
                     </ul>
                 </li>
             </ul>
@@ -115,7 +120,7 @@
                         <strong>Humaines : </strong><br>
                     </p>
                     <ul>
-                        <li>Esprit critique et résolution de problèmes</li>
+                        <li>Implémenter des conceptions simples</li>
                         <li>Communication et travail en équipe</li>
                     </ul>
                 </li>
@@ -123,8 +128,8 @@
 
             <div class="image-row">
                 <div class="image-box">
-                    <img src="../images/Project_1/TVS_Recolt.png" alt="Image 1">
-                    <div class="image-caption">Aperçu de la récolte d’un champignon</div>
+                    <img src="../images/Project_1/code.png" alt="Image 2">
+                    <div class="image-caption">Aperçu du code du logiciel</div>
                 </div>
             </div>
 
@@ -136,13 +141,9 @@
             <div class="separator"></div>
 
             <p>
-                Ce projet sur Unity Engine m'a permis de développer des compétences en programmation C#, en modélisation 3D et en level design.
-                J'ai également découvert de nouvelles notions essentielles à la création d'un jeu vidéo, telles que les LOD, les draw calls, les atlas de textures, entre autres.
-                
-                <br><br>Ce projet m'a particulièrement plu, car il offrait une grande liberté créative, aucun sujet imposé ne limitant notre imagination.
-                Il m'a également permis de réaliser que, même au sein d'une petite équipe de six personnes, la création d'un jeu vidéo est une tâche longue, complexe et exigeante, nécessitant des compétences dans de nombreuses disciplines.
-
-                <br><br>Cette expérience a été pour moi une étape importante, me donnant un premier aperçu concret de ce que peut impliquer le travail dans l'industrie du jeu vidéo.
+                Pour conclure, lors de ce projet, j’ai pu mettre en pratique mes connaissances dans un projet concret qui peut être représentatif du travail quotidien effectué par un développeur d’application.<br><br>
+                J’ai pu lors du projet faire face à des difficultés avec le logiciel ou bien mon propre programme et j’ai réussi à me débrouiller pour pouvoir résoudre les problèmes rencontrés.<br><br>
+                Ce projet m’a également permis de m’améliorer dans la façon de m’organiser dans le travail à faire, car j’avais avant pour habitude de partir tête baisser dans un travail sans réfléchir avant à la façon dont je vais m’y prendre pour réaliser le travail demandé.
             </p>
         </section>
 
@@ -156,16 +157,35 @@
     <div id="footer"></div>
     
     <script>
-        async function includeHTML(id, file) {
-            const element = document.getElementById(id);
-            const response = await fetch(file);
-            const html = await response.text();
-            element.innerHTML = html;
-        }
-
         document.addEventListener("DOMContentLoaded", () => {
+            async function includeHTML(id, file) {
+                const element = document.getElementById(id);
+                const response = await fetch(file);
+                const html = await response.text();
+                element.innerHTML = html;
+            }
+
             includeHTML("header", "../includes/header2.html");
             includeHTML("footer", "../includes/footer2.html");
+
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+
+            document.querySelectorAll('.image-box img, .main-image-box img').forEach(img => {
+                img.addEventListener('click', () => {
+                    lightboxImg.src = img.src;
+                    lightboxImg.alt = img.alt;
+                    lightbox.classList.add('active');
+                });
+            });
+
+            lightbox.addEventListener('click', () => {
+                lightbox.classList.remove('active');
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') lightbox.classList.remove('active');
+            });
         });
     </script>
 
